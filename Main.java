@@ -4,6 +4,16 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        int correctPin = 1234;
+        System.out.print("Enter your 4-digit PIN: ");
+        int enteredPin = scanner.nextInt();
+
+        if (enteredPin != correctPin) {
+        System.out.println("Incorrect PIN. Access Denied.");
+        return;
+        }
+
         double balance = 0;
         boolean isRunning = true;
         int choice;
